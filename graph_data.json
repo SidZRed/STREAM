@@ -1,0 +1,9 @@
+{
+    "edges": [
+        {"start": "A", "end": "B", "base_weight": 1, "linear_factor": 0.1},
+        {"start": "B", "end": "D", "base_weight": 1, "linear_factor": 0.1},
+        {"start": "A", "end": "C", "base_weight": 1, "linear_factor": 0.1},
+        {"start": "C", "end": "D", "base_weight": 1, "linear_factor": 0.1},
+        {"start": "B", "end": "C", "base_weight": 1, "linear_factor": 0.1}
+    ]
+}
