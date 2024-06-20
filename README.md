@@ -5,7 +5,8 @@ This is a simulation project used for modelling the [Braess's paradox](https://e
 The basis of the paradox relies on the Nash equilibrium that is established in a network when there is a flow of persons who would operate on a selfish or greedy behaviour. This looks at how allocation of resources can modify or impact the overall states of the network and all the users.
 This project is a simulation outline of the scenarios possible or encountered when the network is operational and can be modified and extended to cover a greater range of situations where networks may be involved and resources need to be allocated. 
 
-The detailed findings and report can be found in [Report](https://github.com/SidZRed/STREAM/blob/main/braess_1.pdf) and is a small report on testing over a very small network.
+## Report: 
+The detailed findings and report can be found in [Report](https://github.com/SidZRed/STREAM/blob/main/Braess_Paradox.pdf) and is a small report on testing over a very small network.
 
 
 The simulation has been entirely built on python using [NetworkX](https://networkx.org/documentation/stable/index.html#) for the network anaysis.
