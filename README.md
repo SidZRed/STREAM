@@ -114,6 +114,8 @@ Contains the flow state of each edge in the graph with the following format:
     }
 }
 ```
+
+For the defaults, the json files have been included with basic random states for the purpose of providing examples.
 ***
 
 ### `braess_analysis_results.json`
