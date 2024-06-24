@@ -14,7 +14,7 @@ body {
 }
 
 header.dark-mode {
-    background: #728dd8;
+    background: #b6b6b6;
     color: #000000;
     padding: 1rem 0;
     text-align: justify;
@@ -23,7 +23,7 @@ header.dark-mode {
 
 
 header {
-    background: #3f4cdb;
+    background: #848484;
     color: #c0af51;
     padding: 1rem 0;
 
@@ -60,7 +60,7 @@ header {
 #search-input {
     padding: 8px;
     margin-right: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
     border-radius: 4px;
 }
 
@@ -77,7 +77,7 @@ header {
 }
 
 button {
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     background: none;
     border: none;
