@@ -37,7 +37,7 @@ The simulation has been entirely built on python using [NetworkX](https://networ
 
 ## Requirements
 
--   Python 3.x
+-   Python 3.x (x=10 or higher)
 -   [NetworkX](https://networkx.org/documentation/stable/index.html#) - Python Package
 -   JSON
 
