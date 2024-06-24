@@ -5,8 +5,10 @@
 
 ![Static Badge](https://img.shields.io/badge/network_analysis-blue)
 ![Static Badge](https://img.shields.io/badge/game_theory-blue)
+![Static Badge](https://img.shields.io/badge/braess_paradox-blue)
+![Static Badge](https://img.shields.io/badge/simulation-blue)
 
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 This is a simulation project used for modelling the [Braess's paradox](https://en.wikipedia.org/wiki/Braess's_paradox) meant for traffic modelling. It gives an idea on how resources can be added or removed from an existing network in order to increase the overall efficiency of it.
 
@@ -35,7 +37,7 @@ The simulation has been entirely built on python using [NetworkX](https://networ
 
 ## Requirements
 
--   Python 3.x
+-   Python 3.x (x=10 or higher)
 -   [NetworkX](https://networkx.org/documentation/stable/index.html#) - Python Package
 -   JSON
 
