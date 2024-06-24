@@ -5,6 +5,8 @@
 
 ![Static Badge](https://img.shields.io/badge/network_analysis-blue)
 ![Static Badge](https://img.shields.io/badge/game_theory-blue)
+![Static Badge](https://img.shields.io/badge/braess_paradox-blue)
+![Static Badge](https://img.shields.io/badge/simulation-blue)
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
