@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREAM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="../stream_logo.png" alt="Project Logo" class="logo">
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search section ..." onkeyup="filterContent()">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="mode-toggle" onclick="toggleMode()"><i class="fas fa-adjust"></i></button> <!-- Icon for toggle -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1><u>Simulation and Traffic Routing for Efficient Allocation and Management</u></h1>
+        <section id="introduction">
+            <hr>
+            <h2>Introduction</h2>
+            <p>This is a simulation project used for modelling the <a href="https://en.wikipedia.org/wiki/Braess's_paradox">Braess's paradox</a> meant for traffic modelling. It gives an idea on how resources can be added or removed from an existing network in order to increase the overall efficiency of it.</p>
+            <p>The basis of the paradox relies on the Nash equilibrium that is established in a network when there is a flow of persons who would operate on a selfish or greedy behaviour. This looks at how allocation of resources can modify or impact the overall states of the network and all the users. This project is a simulation outline of the scenarios possible or encountered when the network is operational and can be modified and extended to cover a greater range of situations where networks may be involved and resources need to be allocated.</p>
+        </section>
+        <section id="report">  
+            <hr> 
+            <h2>Report</h2>
+            <p>The detailed findings and report can be found in <a href="https://github.com/SidZRed/STREAM/blob/main/Braess_Paradox.pdf">Report</a> and is a small report on testing over a very small network.</p>
+        </section>
+        <section id="requirements">
+            <hr> 
+            <h2>Requirements</h2>
+            <ul>
+                <li>Python 3.x</li>
+                <li><a href="https://networkx.org/documentation/stable/index.html#">NetworkX</a> - Python Package</li>
+                <li>JSON</li>
+            </ul>
+            <pre><code>pip install networkx</code></pre>
+        </section>
+        <section id="project-structure">
+            <hr> 
+            <h2>Project Structure</h2>
+            <ul>
+                <li><code>build_graph.py</code>: Script to build the graph from a JSON file containing edge data.</li>
+                <li><code>update_weights.py</code>: Script to update the weights of the edges based on traffic flow data.</li>
+                <li><code>shortest_path.py</code>: Script to find the shortest path for a new person entering the network.</li>
+                <li><code>analyze_braess.py</code>: Script to analyze Braess's paradox by removing and adding edges.</li>
+                <li><code>main.py</code>: Script to loop through each pair of nodes, perturb each possibility, and analyze Braess's paradox.</li>
+                <li><code>graph_data.json</code>: JSON file containing the graph structure.</li>
+                <li><code>graph_flow.json</code>: JSON file containing the flow state of each edge in the graph.</li>
+                <li><code>braess_analysis_results.json</code>: Output JSON file containing the results of the Braess's paradox analysis.</li>
+            </ul>
+        </section>
+        <section id="files-description">
+            <hr> 
+            <h2>Files Description</h2>
+            <div>
+                <h3><code>build_graph.py</code></h3>
+                <p>Constructs the graph from <code>graph_data.json</code>.</p>
+                <h4>Usage-</h4>
+                <pre><code>python build_graph.py</code></pre>
+            </div>
+            <div>
+                <h3><code>update_weights.py</code></h3>
+                <p>Updates the weights of the edges based on traffic flow data from <code>graph_flow.json</code>.</p>
+                <h4>Usage-</h4>
+                <pre><code>python update_weights.py</code></pre>
+            </div>
+            <div>
+                <h3><code>shortest_path.py</code></h3>
+                <p>Finds the shortest path for a given source and destination node in the graph.</p>
+                <h4>Usage-</h4>
+                <pre><code>python shortest_path.py</code></pre>
+                <p>When run, it will prompt for the source and destination nodes.</p>
+            </div>
+            <div>
+                <h3><code>analyse_braess.py</code></h3>
+                <p>Analyses Braess's paradox by removing and adding edges and checking the effect on the shortest path.</p>
+                <h4>Usage-</h4>
+                <pre><code>python analyse_braess.py</code></pre>
+                <p>When run, it will prompt for the source and destination nodes.</p>
+            </div>
+            <div>
+                <h3><code>main.py</code></h3>
+                <p>Loops through each pair of nodes, perturbs each possibility by removing and adding edges, and analyzes Braess's paradox.</p>
+                <h4>Usage-</h4>
+                <pre><code>python main.py</code></pre>
+                <p>Runs the entire analysis of the network by running the above simulations.</p>
+            </div>
+        </section>
+        <section id="json-files">
+            <hr> 
+            <h2>JSON Files</h2>
+            <div>
+                <h3><code>graph_data.json</code></h3>
+                <p>Contains the graph structure with the following format:</p>
+                <pre><code>{
+    "edges": [
+        {"start": "A", "end": "B", "base_weight": 1, "linear_factor": 1},
+        {"start": "B", "end": "D", "base_weight": 1, "linear_factor": 1},
+        {"start": "A", "end": "C", "base_weight": 1, "linear_factor": 1},
+        {"start": "C", "end": "D", "base_weight": 1, "linear_factor": 1},
+        {"start": "B", "end": "C", "base_weight": 1, "linear_factor": 1}
+    ]
+}</code></pre>
+            </div>
+            <div>
+                <h3><code>graph_flow.json</code></h3>
+                <p>Contains the flow state of each edge in the graph with the following format:</p>
+                <pre><code>{
+    "flows": {
+        "('A', 'B')": 10,
+        "('B', 'D')": 10,
+        "('A', 'C')": 10,
+        "('C', 'D')": 10,
+        "('B', 'C')": 0
+    }
+}</code></pre>
+                <p>For the defaults, the json files have been included with basic random states for the purpose of providing examples.</p>
+            </div>
+            <div>
+                <h3><code>braess_analysis_results.json</code></h3>
+                <p>Contains the results of the Braess's paradox analysis. Generated by running <code>main.py</code>.</p>
+            </div>
+        </section>
+        <section id="running-the-project">
+            <hr> 
+            <h2>Running the Project</h2>
+            <ol>
+                <li>Ensure you have the required Python packages installed.</li>
+                <li>Ensure your <code>graph_data.json</code> and <code>graph_flow.json</code> files are properly set up.</li>
+                <li>Run <code>main.py</code> to perform a comprehensive analysis of Braess's paradox on your graph:</li>
+                <pre><code>python main.py</code></pre>
+                <li>The results will be saved to <code>braess_analysis_results.json</code>.</li>
+            </ol>
+        </section>
+        <section id="license">
+            <hr> 
+            <h2>License</h2>
+            <p>This project is licensed under the <a href="https://github.com/SidZRed/STREAM/blob/main/LICENSE">MIT License</a>.</p>
+        </section>
+        <section id="credits">
+            <hr> 
+            <h2>Credits</h2>
+            <p>This project/tool was created by <a href="https://github.com/SidZRed">@SidZRed</a> as a part of a Game Theory reading and analysis project. Any contributions to the above are most welcome!</p>
+        </section>
+        <div class="badges">
+            <hr> 
+            <img src="https://img.shields.io/badge/network_analysis-blue" alt="Network Analysis Badge">
+            <img src="https://img.shields.io/badge/game_theory-blue" alt="Game Theory Badge">
+            <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License Badge"></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simulation and Traffic Routing for Efficient Allocation and Management</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    background-color: #ffffff; /* Light mode background color */
+    color: #000000; /* Light mode text color */
+    margin: 0;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: #f7f3f3;
+}
+
+header {
+    background: #728dd8;
+    color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header.dark-mode {
+    background: #3f4cdb;
+    color: #000000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+#search-input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-button {
+    padding: 8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+#search-button:focus {
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+.fa-adjust {
+    transition: transform 0.5s ease;
+}
+
+.dark-mode .fa-adjust {
+    transform: rotate(180deg); /* Rotate icon when in dark mode */
+}
+
+.main {
+    padding: 1rem;
+}
+h3{
+    color:red;
+}
+
+footer {
+    background: #828282;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer.dark-mode {
+    background: #000000;
+    color: #b8b8b8;
+    text-align: center;
+}
+
+a {
+    color: rgb(131, 188, 188);
+}
