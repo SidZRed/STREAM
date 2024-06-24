@@ -1,6 +1,6 @@
 # Simulation and Traffic Routing for Efficient Allocation and Management
 
-![Project Logo](https://github.com/SidZRed/STREAM/blob/main/stream_logo.png)
+![Project Logo](stream_logo.png)
 
 
 ![Static Badge](https://img.shields.io/badge/network_analysis-blue)
