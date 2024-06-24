@@ -1,29 +1,45 @@
-body {
+body.dark-mode {
     font-family: Arial, sans-serif;
     transition: background-color 0.3s ease;
     background-color: #ffffff; /* Light mode background color */
     color: #000000; /* Light mode text color */
     margin: 0;
+    padding: 10px;
 }
 
-body.dark-mode {
+body {
     background-color: black;
     color: #f7f3f3;
 }
 
-header {
+header.dark-mode {
     background: #728dd8;
     color: #000000;
     padding: 1rem 0;
-    text-align: center;
+    text-align: justify;
+
 }
 
-header.dark-mode {
+
+header {
     background: #3f4cdb;
-    color: #000000;
+    color: #c0af51;
+    padding: 1rem 0;
+
+    text-align: justify;
 }
 
+.main-heading h1 {
+    font-family: 'Arial, sans-serif'; 
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #000000; 
+    margin: 0; 
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+}
 .header-content {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,18 +99,29 @@ button:focus {
 .main {
     padding: 1rem;
 }
+
+code {
+    font-family: 'Courier New', Courier, monospace; /* Use a monospace font */
+    background-color: #dedddd; /* Light gray background */
+    color: #000000; /* Dark text color */
+    padding: 4px; /* Padding around the text */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #000000; /* Light border */
+    display: inline-block; /* Ensure proper spacing */
+}
+
 h3{
     color:red;
 }
 
-footer {
-    background: #828282;
+footer.dark-mode {
+    background: #c3c3c3;
     color: #000000;
     text-align: center;
     padding: 1rem 0;
 }
 
-footer.dark-mode {
+footer {
     background: #000000;
     color: #b8b8b8;
     text-align: center;
