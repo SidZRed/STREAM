@@ -8,6 +8,7 @@ body.dark-mode {
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: black;
     color: #f7f3f3;
 }
