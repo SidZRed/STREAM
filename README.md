@@ -16,7 +16,7 @@ The basis of the paradox relies on the Nash equilibrium that is established in a
 This project is a simulation outline of the scenarios possible or encountered when the network is operational and can be modified and extended to cover a greater range of situations where networks may be involved and resources need to be allocated. 
 
 ## Webpage:
-Webpage of the project - [STREAM](https://sidzred.github.io/STREAM/). Check this source for more information about the project
+Webpage of the project - [STREAM](https://sidzred.github.io/STREAM/). Check this source for more information about the project.
 
 ## Report: 
 The detailed findings and report can be found in [Report](https://github.com/SidZRed/STREAM/blob/main/Braess_Paradox.pdf) and is a small report on testing over a very small network.
