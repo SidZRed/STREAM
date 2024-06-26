@@ -1,6 +1,6 @@
 body.dark-mode {
     font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease;
+    transition: background-color 1s ease, color 1s ease; /* Slower transition */
     background-color: #ffffff; /* Light mode background color */
     color: #000000; /* Light mode text color */
     margin: 0;
@@ -11,24 +11,33 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     color: #f7f3f3;
+    transition: background-color 1.5s ease, color 1.5s ease; /* Slower transition */
+    margin: 0; /* Ensure no default margin */
+    padding: 10px; 
 }
+
+
 
 header.dark-mode {
     background: #b6b6b6;
     color: #000000;
     padding: 1rem 0;
     text-align: justify;
-
+    transition: background 1s ease, color 1s ease; /* Slower transition */
+    border-radius: 5px;
+    padding-left: 10px;
 }
-
 
 header {
     background: #848484;
-    color: #c0af51;
+    color: #f1e3e3;
     padding: 1rem 0;
-
     text-align: justify;
+    transition: background 1.5s ease, color 1.5s ease; /* Slower transition */
+    border-radius: 5px;
+    padding-left: 10px;
 }
+
 
 .main-heading h1 {
     font-family: 'Arial, sans-serif'; 
@@ -39,22 +48,25 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px; 
 }
-.header-content {
 
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
 .header-right {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
 .search-container {
     display: flex;
     align-items: center;
     margin-right: 20px; /* Adjust margin as needed */
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
 #search-input {
@@ -111,8 +123,8 @@ code {
     display: inline-block; /* Ensure proper spacing */
 }
 
-h3{
-    color:red;
+h3 {
+    color: red;
 }
 
 footer.dark-mode {
@@ -130,4 +142,52 @@ footer {
 
 a {
     color: rgb(131, 188, 188);
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header, footer {
+        padding: 0.5rem 0; /* Adjust padding for smaller screens */
+    }
+
+    .main-heading h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        letter-spacing: 2px; /* Adjust letter spacing for smaller screens */
+    }
+
+    .header-content {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .header-right {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .search-container {
+        width: 100%; /* Take full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    #search-input {
+        width: 100%; /* Take full width */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    button {
+        width: 100%; /* Take full width */
+        padding: 10px; /* Adjust padding */
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .main {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    code {
+        display: block; /* Ensure proper display */
+        margin: 10px 0; /* Add margin for spacing */
+    }
 }
