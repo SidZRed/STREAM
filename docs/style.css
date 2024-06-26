@@ -50,20 +50,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .header-right {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .search-container {
     display: flex;
     align-items: center;
     margin-right: 20px; /* Adjust margin as needed */
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
 #search-input {
@@ -165,13 +164,19 @@ a {
     }
 
     .search-container {
-        width: auto; /* Keep original width */
+        flex: 1; /* Allow it to grow and shrink */
         margin-right: 10px; /* Reduce right margin */
     }
 
     #search-input {
         padding: 6px; /* Adjust padding */
         margin-right: 5px; /* Reduce right margin */
+        flex: 1; /* Allow it to grow and shrink */
+    }
+
+    #search-button {
+        padding: 6px; /* Adjust padding */
+        font-size: 1rem; /* Adjust font size */
     }
 
     button {
