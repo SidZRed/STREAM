@@ -16,8 +16,6 @@ body {
     padding: 10px; 
 }
 
-
-
 header.dark-mode {
     background: #b6b6b6;
     color: #000000;
@@ -37,7 +35,6 @@ header {
     border-radius: 5px;
     padding-left: 10px;
 }
-
 
 .main-heading h1 {
     font-family: 'Arial, sans-serif'; 
@@ -151,35 +148,35 @@ a {
     }
 
     .main-heading h1 {
-        font-size: 36px; /* Adjust font size for smaller screens */
-        letter-spacing: 2px; /* Adjust letter spacing for smaller screens */
+        font-size: 24px; /* Adjust font size for smaller screens */
+        letter-spacing: 1.5px; /* Adjust letter spacing for smaller screens */
     }
 
     .header-content {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: row; /* Maintain items in a row */
+        align-items: center; /* Align items to the center */
+        flex-wrap: nowrap; /* Prevent items from wrapping */
     }
 
     .header-right {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: row; /* Maintain items in a row */
+        align-items: center; /* Align items to the center */
+        flex-wrap: nowrap; /* Prevent items from wrapping */
     }
 
     .search-container {
-        width: 100%; /* Take full width */
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add bottom margin */
+        width: auto; /* Keep original width */
+        margin-right: 10px; /* Reduce right margin */
     }
 
     #search-input {
-        width: 100%; /* Take full width */
-        margin-right: 0; /* Remove right margin */
+        padding: 6px; /* Adjust padding */
+        margin-right: 5px; /* Reduce right margin */
     }
 
     button {
-        width: 100%; /* Take full width */
         padding: 10px; /* Adjust padding */
-        font-size: 1.2rem; /* Adjust font size */
+        font-size: 1rem; /* Adjust font size */
     }
 
     .main {
