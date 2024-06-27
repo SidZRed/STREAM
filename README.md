@@ -172,4 +172,5 @@ For any queries, bug reports or feature requests, please contact [@SidZRed](http
 This project is licensed under the [MIT License](https://github.com/SidZRed/STREAM/blob/main/LICENSE).
 
 ## Credits
-This project/ tool was created by [@SidZRed](https://github.com/SidZRed) as a part of a Game Theory reading and analysis project. Any contributions to the above are most welcome!
+
+This project/ tool was created by [@SidZRed](https://github.com/SidZRed) as a part of a Game Theory reading and analysis project as a simulation tool for the analysis of Braess's Paradox. Any contributions to the above are most welcome!
