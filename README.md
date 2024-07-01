@@ -10,11 +10,27 @@
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+## Abstract
 This is a simulation project used for modelling the [Braess's paradox](https://en.wikipedia.org/wiki/Braess's_paradox) meant for traffic modelling. It gives an idea on how resources can be added or removed from an existing network in order to increase the overall efficiency of it.
 
 
 The basis of the paradox relies on the Nash equilibrium that is established in a network when there is a flow of persons who would operate on a selfish or greedy behaviour. This looks at how allocation of resources can modify or impact the overall states of the network and all the users.
 This project is a simulation outline of the scenarios possible or encountered when the network is operational and can be modified and extended to cover a greater range of situations where networks may be involved and resources need to be allocated. 
+
+
+
+## Table of Contents
+- [Abstract](https://github.com/SidZRed/STREAM/edit/main/README.md#abstract)
+- [Webpage](https://github.com/SidZRed/STREAM/edit/main/README.md#webpage)
+- [Report](https://github.com/SidZRed/STREAM/edit/main/README.md#report)
+- [Project Structure](https://github.com/SidZRed/STREAM/edit/main/README.md#project-structure)
+- [Requirements](https://github.com/SidZRed/STREAM/edit/main/README.md#requirements)
+- [File Description](https://github.com/SidZRed/STREAM/edit/main/README.md#files-description)
+- [Running the project](https://github.com/SidZRed/STREAM/edit/main/README.md#running-the-project)
+- [Support](https://github.com/SidZRed/STREAM/edit/main/README.md#support)
+- [License](https://github.com/SidZRed/STREAM/edit/main/README.md#license)
+- [Credits](https://github.com/SidZRed/STREAM/edit/main/README.md#credits)
+
 
 ## Webpage:
 Webpage of the project - [STREAM](https://sidzred.github.io/STREAM/). Check this source for more information about the project. This contains the detailed report and the guide for using this tool.
@@ -32,8 +48,8 @@ The simulation has been entirely built on python using [NetworkX](https://networ
 -   `shortest_path.py`: Script to find the shortest path for a new person entering the network.
 -   `analyze_braess.py`: Script to analyze Braess's paradox by removing and adding edges.
 -   `main.py`: Script to loop through each pair of nodes, perturb each possibility, and analyze Braess's paradox.
--   `graph_data.json`: JSON file containing the graph structure.
--   `graph_flow.json`: JSON file containing the flow state of each edge in the graph.
+-   `graph_data.json`: JSON file containing the graph structure - Edges and nodes.
+-   `graph_flow.json`: JSON file containing the flow state of each edge in the graph. Edges classified on basis of traffic flows.
 -   `braess_analysis_results.json`: Output JSON file containing the results of the Braess's paradox analysis.
 
 ## Requirements
