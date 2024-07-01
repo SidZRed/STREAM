@@ -21,15 +21,15 @@ This project is a simulation outline of the scenarios possible or encountered wh
 
 ## Table of Contents
 - [Abstract](#abstract)
-- [Webpage](https://github.com/SidZRed/STREAM/edit/main/README.md#webpage)
-- [Report](https://github.com/SidZRed/STREAM/edit/main/README.md#report)
-- [Project Structure](https://github.com/SidZRed/STREAM/edit/main/README.md#project-structure)
-- [Requirements](https://github.com/SidZRed/STREAM/edit/main/README.md#requirements)
-- [File Description](https://github.com/SidZRed/STREAM/edit/main/README.md#files-description)
-- [Running the project](https://github.com/SidZRed/STREAM/edit/main/README.md#running-the-project)
-- [Support](https://github.com/SidZRed/STREAM/edit/main/README.md#support)
-- [License](https://github.com/SidZRed/STREAM/edit/main/README.md#license)
-- [Credits](https://github.com/SidZRed/STREAM/edit/main/README.md#credits)
+- [Webpage](#webpage)
+- [Report](#report)
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [File Description](#files-description)
+- [Running the project](#running-the-project)
+- [Support](#support)
+- [License](#license)
+- [Credits](#credits)
 
 
 ## Webpage:
